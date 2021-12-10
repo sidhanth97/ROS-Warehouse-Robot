@@ -1,0 +1,9 @@
+<launch> 
+
+
+
+  <node pkg="vision_align" type="cam_sub.py" name="camera_subscription"  output="screen" >  </node>
+  <node pkg="vision_align" type="send_nav_goal.py" name="Goal_action_client"  output="screen" >  </node>
+
+
+</launch>

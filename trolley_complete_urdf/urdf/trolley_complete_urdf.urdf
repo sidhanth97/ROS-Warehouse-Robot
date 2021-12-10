@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Trolley_Complete_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.270252556704773 0.51182160186921 0.715407298091814"
+        rpy="0 0 0" />
+      <mass
+        value="1.30189171152403" />
+      <inertia
+        ixx="0.0331304005743222"
+        ixy="7.82060880037623E-07"
+        ixz="-0.00126164884827886"
+        iyy="0.0253452320356869"
+        iyz="1.00025568081305E-05"
+        izz="0.0444866464705974" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 1 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FR_link">
+    <inertial>
+      <origin
+        xyz="9.098318749216E-05 -0.00897645127928853 -0.0281572259069433"
+        rpy="0 0 0" />
+      <mass
+        value="0.663181313661936" />
+      <inertia
+        ixx="0.00104686841015958"
+        ixy="1.39726235001382E-06"
+        ixz="1.59848526115865E-10"
+        iyy="0.00090902790905592"
+        iyz="-7.35257122351112E-13"
+        izz="0.00177678489777192" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/FR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/FR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front_Right_Wheel"
+    type="revolute">
+    <origin
+      xyz="-0.032299 -0.32318 0.88418"
+      rpy="0 0 -0.010135" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL_Link">
+    <inertial>
+      <origin
+        xyz="9.09832889947719E-05 -0.00897645198187874 -0.0281572257472024"
+        rpy="0 0 0" />
+      <mass
+        value="0.663181320216522" />
+      <inertia
+        ixx="0.00104686841514304"
+        ixy="1.3972637461221E-06"
+        ixz="1.58804325864757E-10"
+        iyy="0.000909027911414302"
+        iyz="1.60960464801924E-12"
+        izz="0.00177678490158222" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/FL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/FL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front_Left_Wheel"
+    type="revolute">
+    <origin
+      xyz="-0.032299 -0.32318 0.19418"
+      rpy="0 0 -0.010135" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR_Link">
+    <inertial>
+      <origin
+        xyz="9.09832914566255E-05 -0.00897645047487916 -0.028157225726175"
+        rpy="0 0 0" />
+      <mass
+        value="0.663181306301882" />
+      <inertia
+        ixx="0.00104686840394144"
+        ixy="1.39726405510478E-06"
+        ixz="1.61067986753676E-10"
+        iyy="0.000909027906287309"
+        iyz="2.16110729638094E-12"
+        izz="0.00177678489296504" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/RR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/RR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rear_Right_Wheel"
+    type="revolute">
+    <origin
+      xyz="0.6327 -0.32318 0.88418"
+      rpy="0 0 -0.010135" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL_Link">
+    <inertial>
+      <origin
+        xyz="9.0983288994817E-05 -0.0089764519818788 -0.0281572257472024"
+        rpy="0 0 0" />
+      <mass
+        value="0.663181320216522" />
+      <inertia
+        ixx="0.00104686841514304"
+        ixy="1.39726374612197E-06"
+        ixz="1.58804325863694E-10"
+        iyy="0.000909027911414302"
+        iyz="1.60960466172491E-12"
+        izz="0.00177678490158222" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/RL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Trolley_Complete_URDF/meshes/RL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rear_Left_Wheel"
+    type="revolute">
+    <origin
+      xyz="0.6327 -0.32318 0.19418"
+      rpy="0 0 -0.010135" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
