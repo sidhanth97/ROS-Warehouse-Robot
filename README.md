@@ -1,6 +1,7 @@
 # ROS-Warehouse-Robot
-ROS based Volta robot equipped with Navigation and PBVS capabilities
+Course Project at UMN (CSCI5551 - Introduction to Intelligent Robots)
 
+ROS based Volta robot equipped with Navigation and PBVS capabilities
 
 Instructions for running the project: 
 
